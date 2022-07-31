@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BEADS</title>
+</head>
+<style>
+
+    div {
+        background-color: rgb(127, 177, 177);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        border-radius: 15px;
+        padding: 0 60px 0 60px;
+    }
+    h1 {
+        color: antiquewhite;
+        padding-top: 20px;
+
+    }
+    h2 {
+        color: rgb(1, 68, 68);
+    }
+    img {
+        width: 80%;
+        max-width: 700px;
+        display: block;
+        margin: auto;
+        border-radius: 15px;
+    }
+    span.{
+        color: rgb(1, 68, 68);
+    }
+    p{
+        font-style: italic;
+        
+    }
+    button {
+        font-size: 20px;
+        margin: 0px  0  30px;
+        padding: 10px 30px 10px 30px;
+        background-color: rgb(1, 68, 68);
+        color: antiquewhite;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    }
+    button:hover {
+        background-color: antiquewhite;
+        color: rgb(1, 68, 68);
+        cursor: pointer;
+        
+    }
+</style>
+<body>
+    <div>
+        <h1>MY BEADS</h1>
+        <h2>My name is Tetiana, and this is my world! </h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/055/original/unnamed2.jpg?1654169105"
+        alt="MY BEADS">
+        <br>
+        <span>
+            This is my hobby - weaving, knitting, embroidering. Beads, sequins, threads, crystals - all this is combined with the incredible pattern in your imagination and then turns into art. Such beauty can be worn or watched and enjoyed. I do it for myself, but I can do it for you. I can teach give inspiration or share the opportunity to create
+        </span>
+        <p>
+            <a href="https://www.instagram.com/moi.businki/"> take a look 😍</a>
+        </p>
+        <button>
+            Order beauty
+        </button>
+    </div>
+    <script>
+    function contact() {
+        let name = prompt("What is your first name?");
+        let tel = prompt("What is telephone number");
+        let question = prompt("Do you like it?")
+        if (question === "yes") {
+            alert(`Congratulation, ${name}, you are in my world! I will call you as soon as possible`)
+        } else {
+            alert("😥 I will call you as soon as possible")
+        }
+    }
+    let button = document.querySelector("button");
+    button.addEventListener("click", contact)
+    </script>
+    
+    
+</body>
+</html>
